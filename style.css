@@ -1,0 +1,110 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Style the main container */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Style the tools section */
+#tools {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#tools .buttons button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the presentation section */
+#presentation {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style chapter headings */
+.chapter h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+  cursor: pointer; /* Make headings clickable */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Style section headings */
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style unordered lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style list items */
+li {
+  margin-bottom: 10px;
+}
+
+/* Style links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add an expandable content class */
+.expandable-content {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Expandable content that's visible when heading is clicked */
+.chapter.active h2 {
+  color: #ff6600;
+}
+
+.chapter.active .expandable-content {
+  display: block;
+}
